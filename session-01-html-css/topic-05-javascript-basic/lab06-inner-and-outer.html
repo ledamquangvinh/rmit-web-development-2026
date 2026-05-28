@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML DOM</title>
+        <style type="text/css">
+            div {
+                border: 1px solid #cc3366;
+                margin: 20px;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="data">
+            <h2>Title of document</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+                pariatur consequuntur nesciunt fugiat iste incidunt debitis
+                natus nemo placeat totam. At facilis expedita vel hic voluptate
+                modi blanditiis culpa inventore!
+            </p>
+        </div>
+
+        <button type="button" onclick="getInner_Text()">Get Inner Text</button>
+        <button type="button" onclick="getInner_HTMl()">Get Inner HTML</button>
+        <button type="button" onclick="getOuter_Text()">Get Outer Text</button>
+        <button type="button" onclick="getOuter_HTML()">Get Outer HTML</button>
+
+        <div id="container"></div>
+
+        <script>
+            var data_node = document.querySelector("#data");
+            var container_node = document.querySelector("#container");
+
+            function getInner_Text() {
+                container_node.innerText = data_node.innerText;
+            }
+            function getInner_HTML() {
+                container_node.innerText = data_node.innerHTML;
+            }
+            function getOuter_Text() {
+                container_node.innerText = data_node.outerText;
+            }
+            function getOuter_HTML() {
+                container_node.innerText = data_node.outerHTML;
+            }
+        </script>
+    </body>
+</html>
