@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Html DOM</title>
+        <style type="text/css">
+            div {
+                border: 1px solid #cc3366;
+                margin: 10px;
+                padding: 10px;
+            }
+            p {
+                background-color: #3366cc;
+                color: #ffffff;
+                padding: 5px;
+                margin: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML DOM</h1>
+
+        <button type="button" onclick="addNew()">Add New</button>
+        <button type="button" onclick="deleteOne()">Delete one</button>
+        <button type="button" onclick="deleteAll()">Delete all</button>
+
+        <div id="container"></div>
+
+        <script>
+            var id = 0;
+            var div_container = document.getElementById("container");
+            console.log(div_container);
+            function addNew() {
+              let p_node = document.createElement('p');
+              let text_node = document.createTextNode(`${id}. item`)
+
+              div_container.appendChild(p_node)
+              p_node.appendChild(text_node)
+              id++;
+            }
+
+            // Annonymous Function
+            const deleteOne = function() {
+              if (div_container.childElementCount > 0) {
+                div_container.removeChild(div_container.lastChild)
+                id--;
+              }
+            }
+            
+            // Arrow function
+            const deleteAll = () => {
+              div_container.innerHTML = "";
+              id = 0;
+            }
+
+        </script>
+    </body>
+</html>
