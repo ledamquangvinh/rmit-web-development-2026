@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reciepts Management</title>
+  <link rel="stylesheet" href="./css/lab-10-app-receipt.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Coffee Brew</h1>
+    <p>Add custom reciept for client</p>
+  </div>
+
+  <main>
+    <form action="#" id="frm-recipes">
+      <div class="input-item">
+        <label for="txt-name">Name of reciept</label>
+        <input type="text" required="required" id="txt-name" class="form-control" placeholder="Enter name of recipe">
+      </div>
+      <div class="input-item">
+        <label for="list-method">Brew Method</label>
+        <select name="" id="list-method" class="form-control">
+          <option value="default">Default</option>
+          <option value="hot">Hot</option>
+          <option value="ice">Ice</option>
+          <option value="middle">Middle</option>
+        </select>
+      </div>
+      <div class="input-item">
+        <label for="txt-note">Notes <span>(option)</span></label>
+        <input type="text" name="" id="txt-note" class="form-control">
+      </div>
+      <div class="input-item">
+        <button type="submit">Add Reciept</button>
+      </div>
+    </form>
+  </main>
+
+  <div class="container">
+    <h2>List of Recipes</h2>
+    <div class="list-recipes"></div>
+  </div>
+  <script src="./js/lab10-app-receipt.js"></script>
+</body>
+</html>
