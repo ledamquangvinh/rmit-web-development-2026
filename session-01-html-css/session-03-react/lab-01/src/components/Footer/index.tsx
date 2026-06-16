@@ -3,7 +3,7 @@
  */
 
 import React from "react";
-
+import "./style.css"
 type Props = {
   message: string
 }
