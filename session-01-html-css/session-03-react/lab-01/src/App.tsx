@@ -4,13 +4,15 @@ import React from 'react'
 
 
 import './App.css'
+import Header from './components/Header'
 
 // define function component with type React.FC
 const App: React.FC = () => {
   //function component must be return render
   return( 
     <>
-      <h1>Hello world</h1>
+      <Header title='Welcome to React application'></Header>
+      F
     </>
   )
 }
