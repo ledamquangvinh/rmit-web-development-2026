@@ -12,12 +12,17 @@ const Products : React.FC = () => {
     <div>
       <h3>List of Products</h3>
       {
-        products.map((item, key) => {
-          <ProductItem id={item.id} name={item.name} price={item.price} key={key}/>
-        })
+        products.map((item, key) => (
+          <ProductItem 
+            id={item.id}
+            name={item.name} 
+            price={item.price} 
+            key={key}
+          />
+        ))
       }
     </div>
   )
 }
 
-export default Products;
+export default Products
