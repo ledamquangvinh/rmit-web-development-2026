@@ -4,7 +4,7 @@
 
 import React from "react";
 import "./style.css"
-import Clock from "../Clock";
+import Clock from "./Clock";
 type Props = {
   message: string
 }

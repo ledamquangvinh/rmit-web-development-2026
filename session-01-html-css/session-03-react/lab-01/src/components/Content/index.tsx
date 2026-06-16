@@ -9,7 +9,7 @@ const Content : React.FC = () => {
   return(
     <div className="content">
       <h2>Content of Page</h2>
-
+      
     </div>
   )
 }
