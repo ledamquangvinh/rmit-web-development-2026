@@ -6,6 +6,7 @@ import React from 'react'
 import './App.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Content from './components/Content'
 
 // define function component with type React.FC
 const App: React.FC = () => {
@@ -15,6 +16,7 @@ const App: React.FC = () => {
   return( 
     <>
       <Header title='Welcome to React application'></Header>
+      <Content></Content>
       <Footer message={message}></Footer>
     </>
   )
