@@ -1,0 +1,15 @@
+:root {
+  --color-pure: #a084cf;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-blue: #3ab0ff;
+  --color-green: #bdf2d5;
+}
+
+ul.nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--color-pure);
+}
+
