@@ -3,7 +3,7 @@ import React from "react";
 import { type InputHTMLAttributes, forwardRef } from "react";
 import cn from 'classnames'
 
-const Input = forwardRef<HTMLInputElement, InputHTMLAttributes<HTMLInputElement>>(({ className, ...rest}, ref) => {
+const Input: React.FC = forwardRef<HTMLInputElement, InputHTMLAttributes<HTMLInputElement>>(({ className, ...rest}, ref) => {
   return (
     <input 
       {...rest}

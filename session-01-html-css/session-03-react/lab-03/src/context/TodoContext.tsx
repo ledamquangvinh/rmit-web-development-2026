@@ -52,9 +52,10 @@ const TodoProvider = (props : { children : React.ReactNode }) => {
         if (todo.id === id) {
           return {
             ...todo,
-            status: todo.status === 'undone' ? 'completed' : 'undone'
+            status: todo.status === 'undone' ? 'complete' : 'undone'
           }
         }
+        return todo;
       })
     })
   }
