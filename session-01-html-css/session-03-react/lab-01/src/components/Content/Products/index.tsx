@@ -1,0 +1,28 @@
+/**
+ * Define Component for render list of products
+ */
+
+import React from "react";
+
+import products from '../../../data/data.json'
+import ProductItem from "./ProductItem";
+
+const Products : React.FC = () => {
+  return(
+    <div>
+      <h3>List of Products</h3>
+      {
+        products.map((item, key) => (
+          <ProductItem 
+            id={item.id}
+            name={item.name} 
+            price={item.price} 
+            key={key}
+          />
+        ))
+      }
+    </div>
+  )
+}
+
+export default Products
